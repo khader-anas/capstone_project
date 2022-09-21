@@ -90,7 +90,7 @@ class Model
     {
         $col_val = '';
         foreach ($col_val_arr as $column => $column_value) {
-            $col_val .= "$column =' $column_value', ";    //string to match exactly the query Update statment.
+            $col_val .= "$column ='$column_value', ";    //string to match exactly the query Update statment.
         }
         $col_val = rtrim($col_val, ", ");
         $query = "UPDATE $this->table  SET $col_val WHERE id=$id";  //$query = "UPDATE $this->table SET $name='ahmad' WHERE id=$id";

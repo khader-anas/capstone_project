@@ -16,22 +16,29 @@
             <div class="mb-3">
             <div class="mb-3">
                 <label for="displayName" class="form-label">Name</label>
-                <input type="text" name="name" class="form-control" id="displayName">
+                <input type="text" name="name" class="form-control" id="displayName" required>
             </div>
                 <label for="username" class="form-label">Username</label>
-                <input type="text" name="username" class="form-control" id="username" >
+                <input type="text" name="username" class="form-control" id="username" required>
             </div>
             <div class="mb-3">
-                <label for="userEmail" class="form-label">Email</label>
-                <input type="text" name="email" class="form-control" id="userEmail">
+                <label for="userEmail" class="form-label" >Email</label>
+                <input type="text" name="email" class="form-control" id="userEmail" required>
             </div>
             <div class="mb-3">
                 <label for="userPassword" class="form-label">Password</label>
-                <input type="password" name="password" class="form-control" id="userPassword" placeholder="Enter New Password" value="">
+                <input type="password" name="password" class="form-control" id="userPassword" placeholder="Enter New Password" value="" required>
             </div>
             <div class="mb-3">
-                <label for="userRole" class="form-label">Role</label>
-                <input type="text" name="role" class="form-control" id="userRole" value="">
+                <!-- <label for="userRole" class="form-label">Role</label> -->
+                <select name="role" id="userRole" required class="mb-3 btn btn-primary px-5">
+                    <option value>Select User Role</option>
+                    <option value="admin">Admin</option>
+                    <option value="procurement">Procurement</option>
+                    <option value="seller">Seller</option>
+                    <option value="accountant">Accountant</option>
+                </select>
+                <!-- <input type="text" name="role" class="form-control" id="userRole" value=""> -->
             </div>
             <button type="submit" class="btn btn-primary">Add</button>
         </form>

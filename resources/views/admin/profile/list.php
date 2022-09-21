@@ -32,7 +32,7 @@ $current_user = $user->get_by_id($_SESSION['user']->user_id);
                 <img src="<?php
                   $pp_path = "/resources/photos/";
                   echo !empty($current_user->profile_photo) ? $pp_path . $current_user->profile_photo : $pp_path . "pp-default.jpg";  //check if not empty in DB not in file
-                  ?>" class=" img-thumbnail rounded-circle w-50" alt="Profile-Photo">
+                  ?>" class="img-thumbnail rounded-circle w-50" alt="Profile-Photo">
             </div>
             <h4 class="text-center mt-3"><strong><?= $data->user->display_name ?></strong></h4>
         </div>
